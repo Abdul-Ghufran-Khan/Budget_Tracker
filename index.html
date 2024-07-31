@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="mainh1">Budget Tracker</h1>
+<div class="container">
+  <div class="box">
+    <h2>Budget</h2>
+    <input type="text" id="budgetInput" placeholder="Enter Budget">
+    <button onclick="setBudget()">Set Budget</button>
+  </div>
+
+  <div class="box">
+    <h2>Expenses</h2>
+    <input type="text" id="productInput" placeholder="Enter Title Of Product">
+    <input type="text" id="costInput" placeholder="Enter Cost Of The Post">
+    <button onclick="addExpense()">Check Amount</button>
+  </div>
+</div>
+
+<div class="results">
+  <div class="result-box">
+    <h3>Total Budget</h3>
+    <p id="totalBudget">0</p>
+  </div>
+
+  <div class="result-box">
+    <h3>Expenses</h3>
+    <p id="totalExpenses">0</p>
+  </div>
+
+  <div class="result-box">
+    <h3>Balance</h3>
+    <p id="balance">0</p>
+  </div>
+</div>
+<div class="expenseitem">
+<h2>Expense List</h2>
+<ul id="expenseList"></ul>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
